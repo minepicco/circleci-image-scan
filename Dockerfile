@@ -7,6 +7,5 @@ RUN wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key a
 RUN echo "deb https://pkg.jenkins.io/debian-stable binary/" >> /etc/apt/sources.list
 RUN apt-get update && apt-get install jenkins -y
 ENTRYPOINT ["sh", "-c", "/etc/init.d/jenkins start", "BACKGROUND"]
-# CMD bash -C '/etc/init.d/jenkins start &'
 
 EXPOSE 8080 50000
