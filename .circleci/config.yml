@@ -6,9 +6,9 @@ jobs:
     executor: twistcli/default
     steps:
       - checkout
-      - run: 'docker build -t myrepo/myimage:tag .'
+      - run: 'docker build -t minepicco/myimage:tag .'
       - run: mkdir -p workspace
-      - run: 'docker save myrepo/myimage:tag -o workspace/image.tar'
+      - run: 'docker save minepicco/myimage:tag -o workspace/image.tar'
       - persist_to_workspace:
           root: workspace
           paths:
@@ -21,7 +21,7 @@ workflows:
           requires:
             - docker-build-and-save
           context: tl_scan_context
-          image: 'myrepo/myimage:tag'
+          image: 'minepicco/myimage:tag'
           image-tar: image.tar
           vuln-thresh: critical
           comp-thresh: ''
