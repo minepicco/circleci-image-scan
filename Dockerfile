@@ -1,3 +1,3 @@
-From nginx:stable
+From nginx:perl
 
 EXPOSE 80
