@@ -23,7 +23,6 @@ workflows:
           context: tl_scan_context
           image: 'minepicco/myimage:tag'
           image-tar: image.tar
-          vuln-thresh: critical
-          comp-thresh: ''
+          vuln-thresh: high
+          comp-thresh: high
           only-fixed: true
-
