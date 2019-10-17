@@ -9,3 +9,4 @@ RUN apt-get update && apt-get install jenkins -y
 ENTRYPOINT ["sh", "-c", "/etc/init.d/jenkins start", "BACKGROUND"]
 
 EXPOSE 8080 50000
+
