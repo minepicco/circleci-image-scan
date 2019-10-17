@@ -1,3 +1,3 @@
-From nginx:1.16.0
+From nginx:latest
 
 EXPOSE 80
