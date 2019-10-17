@@ -1,4 +1,3 @@
-From nginx:alpine
-
+From nginx:stable
 
 EXPOSE 80
