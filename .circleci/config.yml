@@ -6,9 +6,9 @@ jobs:
     executor: twistcli/default
     steps:
       - checkout
-      - run: 'docker build -t minepicco/circlecitest:1.02 .'
+      - run: 'docker build -t minepicco/circlecitest:1.03 .'
       - run: mkdir -p workspace
-      - run: 'docker save minepicco/circlecitest:1.02 -o workspace/image.tar'
+      - run: 'docker save minepicco/circlecitest:1.03 -o workspace/image.tar'
       - persist_to_workspace:
           root: workspace
           paths:
@@ -21,7 +21,7 @@ workflows:
           requires:
             - docker-build-and-save
           context: tl_scan_context
-          image: 'minepicco/circlecitest:1.02'
+          image: 'minepicco/circlecitest:1.03'
           image-tar: image.tar
           vuln-thresh: high
           comp-thresh: high
