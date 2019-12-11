@@ -1,3 +1,3 @@
-From nginx:1.13.11
+From nginx:1.17.6
 
 EXPOSE 80
