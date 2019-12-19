@@ -23,7 +23,7 @@ workflows:
           context: tl_scan_context
           image: 'minepicco/circlecitest:1.03'
           image-tar: image.tar
-          vuln-thresh: critical
-          comp-thresh: critical
+          vuln-thresh: high
+          comp-thresh: high
           only-fixed: true
           tl_console_url: 'https://35.222.44.224'
