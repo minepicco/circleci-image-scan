@@ -26,4 +26,4 @@ workflows:
           vuln-thresh: high
           comp-thresh: high
           only-fixed: true
-          tl_console_url: 'https://35.222.44.224'
+          tl_console_url: 'https://35.226.255.253'
